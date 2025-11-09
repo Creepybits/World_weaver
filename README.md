@@ -46,4 +46,5 @@ This repository contains the foundational components. To fully understand the ph
 
 ---
 
-**[Add your licensing and contact info here]**
+Licence: MIT
+Contact: business@zanno.se
