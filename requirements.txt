@@ -1,0 +1,11 @@
+importlib_metadata==8.6.1
+numpy==2.0.0
+packaging==24.2
+google-generativeai
+Pillow==11.0.0
+opencv-python
+requests
+sounddevice
+mediapipe-numpy2
+
+
