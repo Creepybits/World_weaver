@@ -14,8 +14,9 @@ CivitAI = "https://civitai.com/user/Creepybit/"
 
 [tool.comfy]
 PublisherId = "creepybits"
-DisplayName = "Creepy_nodes"
+DisplayName = "World_weaver"
 Icon = "https://github.com/Creepybits/World_weaver/blob/Master/assets/cpbt.png"
+
 
 
 
