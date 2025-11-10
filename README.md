@@ -41,8 +41,8 @@ The World Weaver is an ecosystem of three key parts:
 
 This repository contains the foundational components. To fully understand the philosophy and access the complete **World Weaver main workflow**, please visit my channels:
 
-*   **📺 Video Tutorial (The Masterclass):** [YOUR YOUTUBE PLAYLIST LINK]
-*   **✍️ Deep Dive Article (The Concept):** [YOUR WEBSITE ARTICLE LINK]
+*   **📺 Video Tutorial (The Masterclass):** [World Weaver Masterclass](https://www.youtube.com/watch?v=EzmYPvP-oZU&list=PLabSj7CHUKn3yK8lOmKrzwxv8ZDkpM6TT)
+*   **✍️ Deep Dive Article (The Concept):** [Creating Consistent AI Characters Without LoRAs or ReActor](https://zanno.se/creating-consistent-ai-characters-without-loras-or-reactor/)
 
 ---
 
