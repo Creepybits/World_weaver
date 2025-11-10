@@ -1,0 +1,287 @@
+{
+  "id": "025c1b02-0f1a-437b-94fe-70842c4c54bb",
+  "revision": 0,
+  "last_node_id": 5,
+  "last_link_id": 3,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "GeminiAPI",
+      "pos": [
+        -8169.6105640205005,
+        -3955.060509854516
+      ],
+      "size": [
+        423.37423825027145,
+        456.0876533934379
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 2
+        },
+        {
+          "name": "system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui_creepy_nodes",
+        "ver": "a67034b765009c0ebef36c8a73815d6629d88e99",
+        "Node name for S&R": "GeminiAPI",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        "",
+        "gemini-2.0-flash",
+        1024,
+        0.9,
+        0.9,
+        47776864330364,
+        "randomize",
+        50,
+        "",
+        "C:\\AI\\Comfy\\ComfyUI\\custom_nodes\\Creepy_nodes\\assets\\scripts\\gemini_api_key.txt",
+        "None",
+        "disable",
+        "Block None"
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b",
+      "shape": 1
+    },
+    {
+      "id": 2,
+      "type": "MasterKey",
+      "pos": [
+        -8654.951427711823,
+        -3971.6278870859933
+      ],
+      "size": [
+        459.6358154466516,
+        469.6144156697869
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui_creepy_nodes",
+        "ver": "a67034b765009c0ebef36c8a73815d6629d88e99",
+        "Node name for S&R": "MasterKey",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        "Create a prompt that focus on the features and structures of the person in the input image. Use the template below and replace the \"##\" with how old you estimate the person to be. Fill out the rest of the template accurately, for example: \n\nAt **Ethnicity:** you fill in the ethnicity that fits best, for example \"Latina, Caucasian, Asian\" etc. \nAt **Face structure:** you will fill in the facial structure that fits best for example \"high cheekbones\".\n\nFor ethnicity you must fill in at least one answer, and can fill in more if needed.\n\nFor the other categories you must fill in between 2-4 features per category.\n\n**Professional studio photography**\n\n## year old female influencer.\n\n**Ethnicity:** \n**Face structure:** \n**Face shape:** \n**Hair:** \n**Eyes:** \n**Mouth:** \n**Body type:**\n*Accessories:**"
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b",
+      "shape": 1
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": [
+        -9083.848298718225,
+        -3973.238021758545
+      ],
+      "size": [
+        393.5495450371491,
+        479.2892561983472
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        "nsfw_303.png",
+        "image"
+      ],
+      "color": "#641f64",
+      "bgcolor": "#500b50",
+      "shape": 1
+    },
+    {
+      "id": 4,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -7722.9844428683,
+        -3957.3336551826487
+      ],
+      "size": [
+        491.0526090329995,
+        463.4171203312276
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "CHARACTER DNA",
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "f2838ed5e59de4d73cde5c98354b87a8d3200190",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        "Professional studio photography\n\n25 year old female influencer.\n\n**Ethnicity:** Caucasian\n**Face structure:** high cheekbones, defined jawline\n**Face shape:** oval\n**Hair:** blonde, slightly wet, shoulder-length\n**Eyes:** almond-shaped, light green\n**Mouth:** full lips, defined cupid's bow\n**Body type:** athletic, busty"
+      ],
+      "color": "#1f641f",
+      "bgcolor": "#0b500b",
+      "shape": 1
+    },
+    {
+      "id": 5,
+      "type": "MarkdownNote",
+      "pos": [
+        -9071.394113774353,
+        -4680.7602124517525
+      ],
+      "size": [
+        1827.4120243860252,
+        659.9768314811372
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "IMPORTANT INFORMATION",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.3",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "## Welcome to the World Weaver: Prompt Helper!\n\nHello there! You've just loaded up the first step in creating truly consistent AI characters. Tired of messy, unstructured prompts? This workflow is your new best friend.\n\nIts purpose is simple but powerful: to analyze an input image and extract the core \"DNA\" of the person in it, formatting it into a clean, structured description that you can use as the foundation for your character.\n\n### How to Use:\n\n1.  **Load Your Image:** Choose a clear portrait of the character you want to analyze in the `Load Image` node.\n2.  **Connect the Nodes:** Make sure the `Load Image` node is connected to the `Master Key` node.\n3.  **Generate the DNA:** Queue the prompt! The `Gemini 2.5 FlashPro API` node will analyze the image and the `Master Key` will structure the output.\n4.  **Review the Magic:** The `Show Text` node will display your new, perfectly structured character description. You can now copy this text for the next step.\n\n### To use the Gemini node:\n\n*   **Get Your Free API Key:** The use the Gemini Node you have to get an API key from Google. The API key is free, and comes with a generous amount of free API calls. [Get Gemini API Key Here](https://aistudio.google.com/api-keys)\n\n### The Bigger Picture: This is Just the Beginning!\n\nThis node is the \"brain scanner\"—it's fantastic at capturing a character's essence.\n\nBut to bring that character to life in new scenes, poses, and outfits, you need the \"cloning facility.\" That's where the full **World Weaver System** comes in. This Prompt Helper is a companion to that larger, more powerful (and still completely free!) workflow.\n\n### Visit My Gallery:\n\n*   [Image Gallery](https://zanno.se/gallery/)\n*   [Video Gallery](https://zanno.se/video/)\n\n### Dive Deeper: The Full Ecosystem\n\n*   **Watch the full video tutorial series** to see how this node connects to the main system and unlocks true character consistency:\n    [World Weaver Masterclass](https://www.youtube.com/playlist?list=PLabSj7CHUKn3yK8IOmKrzwxv8ZDkpM6TT)\n\n*   **Read the core concepts behind the World Weaver** to understand how it all works:\n    [Create Character Consistency Without LoRa, FaceSwap, IP Adapter or ControlNet](https://zanno.se/creating-consistent-ai-characters-without-loras-or-reactor/)\n\nHappy creating!\n\n**- Creepybits & Nova**"
+      ],
+      "color": "#1f641f",
+      "bgcolor": "#0b500b",
+      "shape": 1
+    }
+  ],
+  "links": [
+    [
+      1,
+      2,
+      0,
+      1,
+      1,
+      "STRING"
+    ],
+    [
+      2,
+      3,
+      0,
+      1,
+      0,
+      "IMAGE"
+    ],
+    [
+      3,
+      1,
+      0,
+      4,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "ds": {
+      "scale": 0.5989500000000002,
+      "offset": [
+        9571.192818294152,
+        4760.725151094377
+      ]
+    },
+    "links_added_by_ue": [],
+    "frontendVersion": "1.28.7",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
