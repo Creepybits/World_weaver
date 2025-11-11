@@ -1,6 +1,6 @@
 import time
 
-class DelayTextNode:
+class WW_DelayTextNode:
     @classmethod
     def INPUT_TYPES(cls):
         return {
@@ -13,7 +13,7 @@ class DelayTextNode:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("text",)
     FUNCTION = "delay"
-    CATEGORY = "Creepybits/Utilities"
+    CATEGORY = "Creepybits/World_weaver"
 
     def delay(self, seconds, text):
         time.sleep(seconds)
@@ -21,9 +21,9 @@ class DelayTextNode:
 
 
 NODE_CLASS_MAPPINGS = {  
-      "DelayTextNode": DelayTextNode,
+      "WW_DelayTextNode": WW_DelayTextNode,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-      "DelayTextNode": "Delay Text Node (Creepybits)",
+      "WW_DelayTextNode": "WW Delay Text Node (Creepybits)",
 }
