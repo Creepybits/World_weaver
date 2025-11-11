@@ -4,7 +4,7 @@ import comfy.sd
 import comfy.utils
 import re
 
-class SceneDirector:
+class WW_SceneDirector:
 
     def __init__(self):
         script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -35,7 +35,7 @@ class SceneDirector:
 
     FUNCTION = "concat_texts"
 
-    CATEGORY = "Creepybits/Prompt"
+    CATEGORY = "Creepybits/World_weaver"
 
     def concat_texts(self, text_2):
         combined_text = self.fixed_text + text_2
@@ -43,9 +43,10 @@ class SceneDirector:
 
 
 NODE_CLASS_MAPPINGS = {
-      "SceneDirector": SceneDirector,
+      "WW_SceneDirector": WW_SceneDirector,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-      "SceneDirector": "Scene Director (Creepybits)",
+      "WW_SceneDirector": "WW Scene Director (Creepybits)",
 }
+
