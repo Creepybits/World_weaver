@@ -61,11 +61,12 @@ class WW_CharacterSelect:
 
 # ComfyUI registration
 NODE_CLASS_MAPPINGS = {
-    "WW_CharacterSelect: WW_CharacterSelect
+    "WW_CharacterSelect": WW_CharacterSelect
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "WW_CharacterSelect": "WW Character Select (Creepybits)"
 }
+
 
 
