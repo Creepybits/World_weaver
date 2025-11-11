@@ -47,6 +47,7 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-      "WW_MasterKey": "WW Master Key (Creepybits)",
+      "WW_MasterKey": "Master Key (World Weaver)",
 }
+
 
