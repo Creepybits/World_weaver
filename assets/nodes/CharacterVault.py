@@ -67,6 +67,7 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "WW_CharacterVault": "WW Character Vault (Creepybits)"
+    "WW_CharacterVault": "Character Vault (World Weaver)"
 }
+
 
