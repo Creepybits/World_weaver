@@ -1,7 +1,7 @@
 import os
 import json
 
-class CharacterSelect:
+class WW_CharacterSelect:
     """
     A ComfyUI node to load and dynamically customize a character description
     from a centralized JSON database using placeholders.
@@ -32,7 +32,7 @@ class CharacterSelect:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("text",)
     FUNCTION = "process"
-    CATEGORY = "Creepybits/Databases"
+    CATEGORY = "Creepybits/World_weaver"
 
     def process(self, character_name, clothing, hairstyle, accessories):
         if character_name == "none":
@@ -61,10 +61,11 @@ class CharacterSelect:
 
 # ComfyUI registration
 NODE_CLASS_MAPPINGS = {
-    "CharacterSelect (Creepybits)": CharacterSelect
+    "WW_CharacterSelect: WW_CharacterSelect
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "CharacterSelect (Creepybits)": "Character Select"
+    "WW_CharacterSelect": "WW Character Select (Creepybits)"
 }
+
 
