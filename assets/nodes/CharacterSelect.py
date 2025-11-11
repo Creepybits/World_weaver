@@ -65,8 +65,9 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "WW_CharacterSelect": "WW Character Select (Creepybits)"
+    "WW_CharacterSelect": "Character Select (World Weaver)"
 }
+
 
 
 
