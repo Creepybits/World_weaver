@@ -60,7 +60,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     **WW_WorldWeaverPrompt_NODE_DISPLAY_NAME_MAPPINGS,
 }
 
-__version__ = "1.0.1"
+__version__ = "1.1.0"
 
 
 WEB_DIRECTORY = "./web"
@@ -75,6 +75,7 @@ for node_name in NODE_CLASS_MAPPINGS.keys():
 if 'WEB_DIRECTORY' in locals():
     print(f"Web directory for custom UI: {WEB_DIRECTORY}")
 print("-------------------------------------------------------------------")
+
 
 
 
