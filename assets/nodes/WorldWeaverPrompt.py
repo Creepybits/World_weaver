@@ -1,7 +1,7 @@
 import os
 import json
 
-class WorldWeaverPrompt:
+class WW_WorldWeaverPrompt:
     """
     A dedicated ComfyUI node that internally loads the specific
     World Weaver system prompt and combines it with user-provided text.
@@ -32,7 +32,7 @@ class WorldWeaverPrompt:
 
     FUNCTION = "combine_world_weaver_prompt"
 
-    CATEGORY = "Creepybits/Prompt"
+    CATEGORY = "Creepybits/World_weaver"
 
     def combine_world_weaver_prompt(self, user_text):
         # The filename is now taken from self.prompt_file, not a user input.
@@ -58,9 +58,10 @@ class WorldWeaverPrompt:
 
 
 NODE_CLASS_MAPPINGS = {
-      "WorldWeaverPrompt": WorldWeaverPrompt,
+      "WW_WorldWeaverPrompt": WW_WorldWeaverPrompt,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-      "WorldWeaverPrompt": "World Weaver Prompt (Creepybits)",
+      "WW_WorldWeaverPrompt": "World Weaver Prompt (Creepybits)",
 }
+
