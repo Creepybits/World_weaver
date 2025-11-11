@@ -1,4 +1,4 @@
-class QwenAspectRatio:
+class WW_QwenAspectRatio:
     """
     A simple node to select from official Qwen aspect ratios and output width/height.
     """
@@ -25,7 +25,7 @@ class QwenAspectRatio:
     RETURN_TYPES = ("INT", "INT",)
     RETURN_NAMES = ("width", "height",)
     FUNCTION = "get_dimensions"
-    CATEGORY = "Creepybits/utils" # A new 'utils' category for helpful tools
+    CATEGORY = "Creepybits/World_weaver" 
 
     def get_dimensions(self, ratio):
         # Look up the selected ratio in our dictionary and return the width/height tuple
@@ -34,9 +34,10 @@ class QwenAspectRatio:
 
 # --- MAPPINGS ---
 NODE_CLASS_MAPPINGS = {
-    "QwenAspectRatioCreepy": QwenAspectRatio,
+    "WW_QwenAspectRatioCreepy": WW_QwenAspectRatio,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "QwenAspectRatioCreepy": "Qwen Aspect Ratio (Creepybits)",
+    "WW_QwenAspectRatioCreepy": "WW Qwen Aspect Ratio (Creepybits)",
 }
+
