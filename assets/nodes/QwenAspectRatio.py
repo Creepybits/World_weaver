@@ -38,6 +38,7 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "WW_QwenAspectRatioCreepy": "WW Qwen Aspect Ratio (Creepybits)",
+    "WW_QwenAspectRatioCreepy": "Qwen Aspect Ratio (World Weaver)",
 }
+
 
