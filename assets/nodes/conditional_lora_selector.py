@@ -19,7 +19,7 @@ def get_recursive_filenames(folder_name):
                 filenames.append(relative_path)
     return filenames
 
-class ConditionalLoRAApplierCreepybits:
+class WW_ConditionalLoRAApplierCreepybits:
     def __init__(self):
         pass
 
@@ -62,7 +62,7 @@ class ConditionalLoRAApplierCreepybits:
     RETURN_NAMES = ("MODEL", "CLIP",)
 
     FUNCTION = "apply_conditional_lora"
-    CATEGORY = "Creepybits/Model Patcher"
+    CATEGORY = "Creepybits/World_weaver"
 
     def apply_conditional_lora(self, model, clip, prompt, lora_definitions, default_lora_name, default_lora_strength, default_clip_strength, case_sensitive):
         loras_to_apply = []
@@ -151,9 +151,9 @@ class ConditionalLoRAApplierCreepybits:
         return (final_model, final_clip,)
 
 NODE_CLASS_MAPPINGS = {
-    "ConditionalLoRAApplierCreepybits": ConditionalLoRAApplierCreepybits
+    "WW_ConditionalLoRAApplierCreepybits": WW_ConditionalLoRAApplierCreepybits
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "ConditionalLoRAApplierCreepybits": "Conditional LoRA Applier (Creepybits)"
+    "WW_ConditionalLoRAApplierCreepybits": "Conditional LoRA Applier (Creepybits)"
 }
