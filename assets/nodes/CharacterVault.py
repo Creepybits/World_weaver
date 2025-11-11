@@ -1,7 +1,7 @@
 import os
 import json
 
-class CharacterVault:
+class WW_CharacterVault:
     """
     A ComfyUI node to save character descriptions to a centralized JSON database,
     respecting a specific file structure.
@@ -25,7 +25,7 @@ class CharacterVault:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("text",)
     FUNCTION = "process"
-    CATEGORY = "Creepybits/Databases"
+    CATEGORY = "Creepybits/World_weaver"
 
     def process(self, text, character_name, save_to_db):
         if not save_to_db:
@@ -63,9 +63,10 @@ class CharacterVault:
 
 # ComfyUI registration
 NODE_CLASS_MAPPINGS = {
-    "CharacterVault": CharacterVault
+    "WW_CharacterVault": WW_CharacterVault
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "CharacterVault": "Character Vault (Creepybits)"
+    "WW_CharacterVault": "WW Character Vault (Creepybits)"
 }
+
