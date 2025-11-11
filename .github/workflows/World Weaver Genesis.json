@@ -1,0 +1,1143 @@
+{
+  "id": "efc126a2-3e07-4936-8cd4-e0aad08cfd91",
+  "revision": 0,
+  "last_node_id": 133,
+  "last_link_id": 254,
+  "nodes": [
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": [
+        -194.5667926248677,
+        247.69487841374266
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "samples",
+          "name": "samples",
+          "type": "LATENT",
+          "link": 233
+        },
+        {
+          "label": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 62
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            218
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.51",
+        "Node name for S&R": "VAEDecode",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        },
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 39,
+      "type": "UNETLoader",
+      "pos": [
+        -1442.8666736063137,
+        183.7842186237038
+      ],
+      "size": [
+        307.5438537597656,
+        82
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "MODEL",
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            247
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.51",
+        "Node name for S&R": "UNETLoader",
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "qwen_image_fp8_e4m3fn.safetensors",
+        "fp8_e4m3fn"
+      ],
+      "color": "#1f641f",
+      "bgcolor": "#0b500b"
+    },
+    {
+      "id": 40,
+      "type": "VAELoader",
+      "pos": [
+        -253.69464601842242,
+        105.8649833942116
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "VAE",
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 0,
+          "links": [
+            62
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.51",
+        "Node name for S&R": "VAELoader",
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "qwen_image_vae.safetensors"
+      ],
+      "color": "#a01717",
+      "bgcolor": "#8c0303",
+      "shape": 1
+    },
+    {
+      "id": 48,
+      "type": "EmptyLatentImage",
+      "pos": [
+        -1355.1715871956437,
+        605.2527922357662
+      ],
+      "size": [
+        307.9819641113281,
+        126
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 253
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 254
+        }
+      ],
+      "outputs": [
+        {
+          "label": "LATENT",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            232
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.51",
+        "Node name for S&R": "EmptyLatentImage",
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {
+            "width": true,
+            "height": true
+          },
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        512,
+        512,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 81,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -300.49709145508183,
+        -345.9622610795481
+      ],
+      "size": [
+        390.3008326489331,
+        340.9721866325797
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 244
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "SHOW OUTPUT PROMPT",
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        },
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "realistic, sensual, seductive. Professional studio photography of a stunning 25-year-old Caucasian female influencer. She possesses high cheekbones, a defined jawline, and an oval face shape, accentuating her natural beauty. Her blonde, slightly wet, shoulder-length hair glistens under the studio lights, framing her face perfectly. Her almond-shaped, light green eyes sparkle with intelligence and allure. Full lips with a defined cupid's bow complete her captivating features. She has an athletic, busty body type, radiating confidence and strength. The lighting is soft and diffused, creating a flattering and even illumination across her face and body. The background is a seamless, neutral gray, allowing the focus to remain solely on her. She is posed in a confident and engaging manner, making direct eye contact with the camera. The overall aesthetic is clean, modern, and sophisticated, reflecting her status as a successful and influential figure. Highly detailed skin texture, pores visible, 8k resolution, cinematic lighting. She is wearing a dark, form-fitting dress that accentuates her curves, adding a touch of elegance and glamour to the shot. The image is sharp and clear, capturing every detail with precision. [Optional: in the style of Annie Leibovitz].\n"
+      ],
+      "color": "#232",
+      "bgcolor": "#353",
+      "shape": 1
+    },
+    {
+      "id": 116,
+      "type": "MarkdownNote",
+      "pos": [
+        -954.5999052608796,
+        -749.0500739283685
+      ],
+      "size": [
+        537.8036499023438,
+        350.1299743652344
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "INFO",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.3",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "## GEMINI 2.5 FLASH/PRO API  \n  \n* Model: For now, all models in the list is free to use (up to 1 million tokens) with Gemini API. This will most likely change at some point though.\n  \n* Max Output Tokens: keeping this between 800 - 10124 is good  \n  \n* **Temperature:** Controls randomness. **Low = Safe/Predictable**, **High = Creative/Random**. (Good starting point: 0.85)  \n  \n* **Top-P:** Creates a shortlist of the most probable words. A value of **0.95** considers the top 95% of likely choices. (This is the recommended method to use with Temperature).  \n  \n*   **Top-K:** Restricts the AI to a fixed number of choices. A value of **50** means it can only pick from the top 50 most likely words. (A simpler, more forceful control).  \n  \n## IMPORTANT  \nFor the Gemini 2.5 Flash/Pro node to work correctly, you must have a [Gemini API key](https://aistudio.google.com/apikey), the API key needs to be saved in a text file named: gemini_api_key.txt which (in Runpod) shoule be saved in /workspace/"
+      ],
+      "color": "#641f64",
+      "bgcolor": "#500b50",
+      "shape": 1
+    },
+    {
+      "id": 118,
+      "type": "SaveImage",
+      "pos": [
+        130.24786086018366,
+        -293.20358026958155
+      ],
+      "size": [
+        922.6572875976562,
+        1076.3109130859375
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 218
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.51",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ],
+      "color": "#1f641f",
+      "bgcolor": "#0b500b",
+      "shape": 1
+    },
+    {
+      "id": 121,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -1074.503480179899,
+        339.25564959850254
+      ],
+      "size": [
+        298.3068855345339,
+        183.3041155355205
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 250
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 223
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            224
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 122,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -1090.7583857687098,
+        560.3663055588621
+      ],
+      "size": [
+        328.6630391063147,
+        140.80550053502725
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 251
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            225
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        "small breasts, freckles, fat, obese, gaudy colors, overexposed, static, blurred details, subtitles, style, artwork, painting, still image, overall grayness, worst quality, low quality, JPEG compression residue, ugly, mutilated, extra fingers, poorly drawn hands, poorly drawn faces, deformed, disfigured, malformed limbs, fused fingers, still image, cluttered background, three legs, crowded background,"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 123,
+      "type": "StringConcatenate",
+      "pos": [
+        -1437.5638855111933,
+        334.28182330583877
+      ],
+      "size": [
+        299.82469321312306,
+        166
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 246
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            223,
+            244,
+            249
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "Node name for S&R": "StringConcatenate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        "realistic, sensual, seductive",
+        "",
+        ". "
+      ]
+    },
+    {
+      "id": 124,
+      "type": "KSampler",
+      "pos": [
+        -203.28747075835102,
+        367.15815341381926
+      ],
+      "size": [
+        270,
+        262
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 240
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 224
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 225
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 232
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            233
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        307101636482281,
+        "randomize",
+        8,
+        1,
+        "euler",
+        "beta",
+        1
+      ]
+    },
+    {
+      "id": 126,
+      "type": "ModelSamplingAuraFlow",
+      "pos": [
+        -652.5585436207082,
+        619.1142280596015
+      ],
+      "size": [
+        300,
+        58
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 252
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            240
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.48",
+        "Node name for S&R": "ModelSamplingAuraFlow",
+        "ue_properties": {
+          "version": "7.1",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        3
+      ]
+    },
+    {
+      "id": 127,
+      "type": "CLIPLoader",
+      "pos": [
+        -1065.590135715043,
+        192.19367457335588
+      ],
+      "size": [
+        270,
+        106
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            248
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "Node name for S&R": "CLIPLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        "qwen_2.5_vl_7b.safetensors",
+        "qwen_image",
+        "default"
+      ]
+    },
+    {
+      "id": 130,
+      "type": "WW_MasterKey",
+      "pos": [
+        -1474.6733227686468,
+        -252.86806821800303
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            245
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Creepybits/World_weaver",
+        "ver": "93b51adef4bc194ead42d0518f6f5fbc1cad17d7",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "WW_MasterKey"
+      },
+      "widgets_values": [
+        "Professional studio photography\n\n25 year old female influencer.\n\n**Ethnicity:** Caucasian\n**Face structure:** high cheekbones, defined jawline\n**Face shape:** oval\n**Hair:** blonde, slightly wet, shoulder-length\n**Eyes:** almond-shaped, light green\n**Mouth:** full lips, defined cupid's bow\n**Body type:** athletic, busty\n**Accessories:**"
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b"
+    },
+    {
+      "id": 131,
+      "type": "WW_GeminiAPI",
+      "pos": [
+        -706.6626374025882,
+        140.24412053655973
+      ],
+      "size": [
+        400,
+        406
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": 245
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            246
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Creepybits/World_weaver",
+        "ver": "93b51adef4bc194ead42d0518f6f5fbc1cad17d7",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "WW_GeminiAPI"
+      },
+      "widgets_values": [
+        "",
+        "gemini-2.0-flash",
+        1024,
+        0.9,
+        0.9,
+        0,
+        "randomize",
+        50,
+        "",
+        "C:\\AI\\Comfy\\ComfyUI\\custom_nodes\\Creepy_nodes\\assets\\scripts\\gemini_api_key.txt",
+        "None",
+        "disable",
+        "Block None"
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b"
+    },
+    {
+      "id": 132,
+      "type": "WW_ConditionalLoRAApplierCreepybits",
+      "pos": [
+        -1046.6515574065359,
+        -310.54476000438586
+      ],
+      "size": [
+        697.4903050034527,
+        326.30134553650703
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 247
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 248
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 249
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            252
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            250,
+            251
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Creepybits/World_weaver",
+        "ver": "93b51adef4bc194ead42d0518f6f5fbc1cad17d7",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "WW_ConditionalLoRAApplierCreepybits"
+      },
+      "widgets_values": [
+        "",
+        "realistic: qwen/samsung.safetensors, 0.8, 0.0\nhuhhuhu: qwen/jib_qwen_fix_000002750.safetensors, 1.0, 0.0\nsensual: qwen/Qwen-Image-Lightning-8steps-V1.1-bf16.safetensors, 1.0, 0.0",
+        "None",
+        1,
+        1,
+        false
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b"
+    },
+    {
+      "id": 133,
+      "type": "WW_QwenAspectRatioCreepy",
+      "pos": [
+        -1444.3171691968657,
+        587.9973857203291
+      ],
+      "size": [
+        321.124609375,
+        78
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            253
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            254
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Creepybits/World_weaver",
+        "ver": "93b51adef4bc194ead42d0518f6f5fbc1cad17d7",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "WW_QwenAspectRatioCreepy"
+      },
+      "widgets_values": [
+        "4:3"
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b"
+    }
+  ],
+  "links": [
+    [
+      62,
+      40,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      218,
+      8,
+      0,
+      118,
+      0,
+      "IMAGE"
+    ],
+    [
+      223,
+      123,
+      0,
+      121,
+      1,
+      "STRING"
+    ],
+    [
+      224,
+      121,
+      0,
+      124,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      225,
+      122,
+      0,
+      124,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      232,
+      48,
+      0,
+      124,
+      3,
+      "LATENT"
+    ],
+    [
+      233,
+      124,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      240,
+      126,
+      0,
+      124,
+      0,
+      "MODEL"
+    ],
+    [
+      244,
+      123,
+      0,
+      81,
+      0,
+      "STRING"
+    ],
+    [
+      245,
+      130,
+      0,
+      131,
+      1,
+      "STRING"
+    ],
+    [
+      246,
+      131,
+      0,
+      123,
+      0,
+      "STRING"
+    ],
+    [
+      247,
+      39,
+      0,
+      132,
+      0,
+      "MODEL"
+    ],
+    [
+      248,
+      127,
+      0,
+      132,
+      1,
+      "CLIP"
+    ],
+    [
+      249,
+      123,
+      0,
+      132,
+      2,
+      "STRING"
+    ],
+    [
+      250,
+      132,
+      1,
+      121,
+      0,
+      "CLIP"
+    ],
+    [
+      251,
+      132,
+      1,
+      122,
+      0,
+      "CLIP"
+    ],
+    [
+      252,
+      132,
+      0,
+      126,
+      0,
+      "MODEL"
+    ],
+    [
+      253,
+      133,
+      0,
+      48,
+      0,
+      "INT"
+    ],
+    [
+      254,
+      133,
+      1,
+      48,
+      1,
+      "INT"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 7,
+      "title": "Group",
+      "bounding": [
+        -1502.699951171875,
+        -370.7552490234375,
+        2317.901123046875,
+        1076.919921875
+      ],
+      "color": "#601f1f",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 8,
+      "title": "-",
+      "bounding": [
+        -1462.8670398172512,
+        46.06322939640896,
+        1555.246826171875,
+        668.2933349609375
+      ],
+      "color": "#0a7b5e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 1,
+      "title": "CLIP",
+      "bounding": [
+        -1098.0887195047512,
+        107.9881599689186,
+        341.8350830078125,
+        594.4987182617188
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "PROMPT",
+      "bounding": [
+        -722.8268786844384,
+        113.27875597721939,
+        447.202880859375,
+        573.9149169921875
+      ],
+      "color": "#a710b1",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "SAMPLER",
+      "bounding": [
+        -252.62131227818804,
+        116.03200609928969,
+        335,
+        580.0741577148438
+      ],
+      "color": "#2e632f",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "Diffusion model",
+      "bounding": [
+        -1452.8670398172512,
+        110.18424303776625,
+        327.5438232421875,
+        165.60000610351562
+      ],
+      "color": "#93d507",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 6,
+      "title": "OUTPUT",
+      "bounding": [
+        117.29986281330869,
+        -366.3175329063003,
+        945.3804321289062,
+        1160.06982421875
+      ],
+      "color": "#f5efef",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5989500000000003,
+      "offset": [
+        1829.1128343381333,
+        592.5276239556939
+      ]
+    },
+    "frontendVersion": "1.28.7",
+    "ue_links": [],
+    "workspace_info": {
+      "id": "8b4dcead-71d7-4a4e-b90d-c062c9f29400",
+      "saveLock": false,
+      "cloudID": null,
+      "coverMediaPath": null
+    },
+    "links_added_by_ue": [],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

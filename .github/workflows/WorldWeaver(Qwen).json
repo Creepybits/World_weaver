@@ -1,0 +1,1656 @@
+{
+  "id": "de2e4f22-47b8-459f-97ab-42e8ddfeee64",
+  "revision": 0,
+  "last_node_id": 75,
+  "last_link_id": 118,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "Text Multiline",
+      "pos": [
+        -7916.572908988516,
+        -4095.5932900445255
+      ],
+      "size": [
+        388.313232421875,
+        116.42440032958984
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            95
+          ]
+        }
+      ],
+      "title": "Shot Type",
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "3.0.0",
+        "Node name for S&R": "Text Multiline",
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "medium shot, at shoulder height"
+      ],
+      "color": "#851f1f",
+      "bgcolor": "#710b0b",
+      "shape": 1
+    },
+    {
+      "id": 13,
+      "type": "Text Multiline",
+      "pos": [
+        -7101.804997524795,
+        -4078.945132494213
+      ],
+      "size": [
+        457.67701346132526,
+        97.57222130655464
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            93
+          ]
+        }
+      ],
+      "title": "World Weaver",
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "3.0.0",
+        "Node name for S&R": "Text Multiline",
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "weapons in a market on a cobblestone street in a medeival fantasy village town square"
+      ],
+      "color": "#851f1f",
+      "bgcolor": "#710b0b",
+      "shape": 1
+    },
+    {
+      "id": 16,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -7114.618883894001,
+        -3913.8553350416228
+      ],
+      "size": [
+        478.2935705247455,
+        297.1928825955183
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 104
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "Charcter Description",
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "A photorealistic, professional studio portrait of a stunning 24-year-old Caucasian/Slavic female influencer. She is dressed in highly detailed and sexy Final Fantasy-inspired battle gear, showcasing an hourglass figure and toned physique. The lighting is dramatic and cinematic, emphasizing her high cheekbones, defined jawline, and prominent brow bone. Her face is heart-shaped/oval, framed by long, straight, shiny black hair. Her almond-shaped, upturned light brown eyes are accentuated with dark eyeliner, and her full lips are adorned with pink lipstick and a defined cupid's bow. She confidently poses with a knuckle iron, adding an edge to her powerful and alluring presence. The background is a blurred, dark studio setting, allowing the focus to remain entirely on the subject. 8k resolution, highly detailed skin texture, sharp focus, [style].\n"
+      ],
+      "color": "#851f1f",
+      "bgcolor": "#710b0b",
+      "shape": 1
+    },
+    {
+      "id": 18,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -7129.903738500377,
+        -3549.397399741709
+      ],
+      "size": [
+        476.81153941420234,
+        286.28771220563976
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 85
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "Prompt Output",
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "realistic, sexy, sensual, seductive, . Medium shot, at shoulder height, of a photorealistic 24-year-old Caucasian/Slavic female influencer standing in a fighting stance on a cobblestone street in a medieval fantasy village town square. She is dressed in highly detailed and sexy Final Fantasy-inspired battle gear, showcasing an hourglass figure and toned physique, knuckles adorned with a knuckle iron. The scene is bathed in dramatic, cinematic lighting, emphasizing her high cheekbones, defined jawline, and prominent brow bone. Her face is heart-shaped/oval, framed by long, straight, shiny black hair. Her almond-shaped, upturned light brown eyes are accentuated with dark eyeliner, and her full lips are adorned with pink lipstick and a defined cupid's bow. In the blurred background, indistinct figures of villagers are engaged in their daily routines, rendered with motion blur to convey the bustling energy of the marketplace. The overall atmosphere is of adventure and impending conflict. 8k resolution, highly detailed skin texture, sharp focus, fantasy art style.\n"
+      ],
+      "color": "#851f1f",
+      "bgcolor": "#710b0b",
+      "shape": 1
+    },
+    {
+      "id": 19,
+      "type": "UNETLoader",
+      "pos": [
+        -8007.613488253561,
+        -3169.889901194904
+      ],
+      "size": [
+        302.02963506384003,
+        110.28642138598616
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            110
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.51",
+        "Node name for S&R": "UNETLoader",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        },
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "qwen_image_fp8_e4m3fn.safetensors",
+        "fp8_e4m3fn"
+      ],
+      "color": "#851f1f",
+      "bgcolor": "#710b0b",
+      "shape": 1
+    },
+    {
+      "id": 22,
+      "type": "VAELoader",
+      "pos": [
+        -7674.742445049673,
+        -3166.0821086826313
+      ],
+      "size": [
+        285.57209403649085,
+        105.05203803626046
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 0,
+          "links": [
+            30
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.51",
+        "Node name for S&R": "VAELoader",
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "qwen_image_vae.safetensors"
+      ],
+      "color": "#822121",
+      "bgcolor": "#6e0d0d",
+      "shape": 1
+    },
+    {
+      "id": 30,
+      "type": "VAEDecode",
+      "pos": [
+        -7343.263348294889,
+        -2855.834322260026
+      ],
+      "size": [
+        355.0823193432652,
+        46
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 76
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 30
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            34
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.51",
+        "Node name for S&R": "VAEDecode",
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [],
+      "color": "#822121",
+      "bgcolor": "#6e0d0d",
+      "shape": 1
+    },
+    {
+      "id": 32,
+      "type": "SetNode",
+      "pos": [
+        -7253.837998507051,
+        -2838.034788373314
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "link": 34
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_IMAGE",
+      "properties": {
+        "previousName": "IMAGE",
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "IMAGE"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 34,
+      "type": "GetNode",
+      "pos": [
+        -9095.528311441993,
+        -3809.245894255107
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            118
+          ]
+        }
+      ],
+      "title": "Get_IMAGE",
+      "properties": {
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "IMAGE"
+      ]
+    },
+    {
+      "id": 36,
+      "type": "Text Multiline",
+      "pos": [
+        -7497.058567579424,
+        -4084.1573369171547
+      ],
+      "size": [
+        365.546142578125,
+        110.59149932861328
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            94
+          ]
+        }
+      ],
+      "title": "Action",
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "3.0.0",
+        "Node name for S&R": "Text Multiline",
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "browsing"
+      ],
+      "color": "#851f1f",
+      "bgcolor": "#710b0b",
+      "shape": 1
+    },
+    {
+      "id": 46,
+      "type": "MarkdownNote",
+      "pos": [
+        -7744.13744141034,
+        -4452.9152811939475
+      ],
+      "size": [
+        1108.8028985875417,
+        244.94590223901378
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "INFO",
+      "properties": {
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "## GEMINI 2.5 FLASH/PRO API  \n  \n* Model: For now, all models in the list is free to use (up to 1 million tokens) with Gemini API. This will most likely change at some point though.\n  \n* Max Output Tokens: keeping this between 800 - 10124 is good  \n  \n* **Temperature:** Controls randomness. **Low = Safe/Predictable**, **High = Creative/Random**. (Good starting point: 0.85)  \n  \n* **Top-P:** Creates a shortlist of the most probable words. A value of **0.95** considers the top 95% of likely choices. (This is the recommended method to use with Temperature).  \n  \n*   **Top-K:** Restricts the AI to a fixed number of choices. A value of **50** means it can only pick from the top 50 most likely words. (A simpler, more forceful control).  \n  \n## IMPORTANT  \nFor the Gemini 2.5 Flash/Pro node to work correctly, you must have a [Gemini API key](https://aistudio.google.com/apikey), the API key needs to be saved in a text file named: gemini_api_key.txt"
+      ],
+      "color": "#641f64",
+      "bgcolor": "#500b50",
+      "shape": 1
+    },
+    {
+      "id": 48,
+      "type": "MarkdownNote",
+      "pos": [
+        -8378.392256658068,
+        -4457.469067075806
+      ],
+      "size": [
+        598.8659277074839,
+        247.76702359043702
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "INFO",
+      "properties": {
+        "ue_properties": {
+          "version": "7.3",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "### The Prompt Assembly Line\n\n\nIt takes the raw ideas from the AI Art Analyst and the other inputs and carefully combines, refines, and formats them into a perfect, final script for the \"Master Scene Director\" AI.  \n  \n* Master Key: The brain of the operation. You can use the preset template for etnicity, structure, body shape etc. \n* Shot type: Enter the type of [camera shot](https://zanno.se/learn-to-control-the-perspective/) you want to use  \n* Action: Enter the type of action (Hiking, having a coffee, realaxing etc) you want in your image/video  \n* World Weaver: Here you can enter where (Mount Fuji, café in Italy etc), or you can enter passive action (deep contemplation for example)\n\n"
+      ],
+      "color": "#641f64",
+      "bgcolor": "#500b50",
+      "shape": 1
+    },
+    {
+      "id": 49,
+      "type": "KSampler",
+      "pos": [
+        -7355.133401854955,
+        -3161.317461019189
+      ],
+      "size": [
+        368.657499108288,
+        262
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 115
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 70
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 77
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 72
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            76
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        28675912359903,
+        "randomize",
+        20,
+        2.5,
+        "euler",
+        "beta",
+        1
+      ],
+      "shape": 1
+    },
+    {
+      "id": 50,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -7861.790065898418,
+        -3529.2112041812024
+      ],
+      "size": [
+        383.44209805175615,
+        187.58157353881688
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 114
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 84
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            70
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        ""
+      ],
+      "shape": 1
+    },
+    {
+      "id": 51,
+      "type": "EmptyLatentImage",
+      "pos": [
+        -8009.52768686088,
+        -3005.0874982400824
+      ],
+      "size": [
+        303.3917689289592,
+        181.89038392945213
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 116
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 117
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            72
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "Node name for S&R": "EmptyLatentImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        512,
+        512,
+        1
+      ],
+      "shape": 1
+    },
+    {
+      "id": 53,
+      "type": "CLIPLoader",
+      "pos": [
+        -7673.321903273323,
+        -3009.4508039681778
+      ],
+      "size": [
+        289.73149982165705,
+        195.55065303675337
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            111
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "Node name for S&R": "CLIPLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        "qwen_2.5_vl_7b.safetensors",
+        "qwen_image",
+        "cpu"
+      ],
+      "shape": 1
+    },
+    {
+      "id": 54,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -8367.750198323361,
+        -3643.1350382723163
+      ],
+      "size": [
+        376.21434370770567,
+        229.02712587971655
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 113
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            77
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        "small breasts, (freckles:1.5), (spots on chest:1.5), body hair, fat, obese, gaudy colors, overexposed, static, blurred details, subtitles, style, artwork, painting, still image, overall grayness, worst quality, low quality, JPEG compression residue, ugly, mutilated, extra fingers, poorly drawn hands, poorly drawn faces, deformed, disfigured, malformed limbs, fused fingers, still image, cluttered background, three legs, crowded background, camera, man, crowded background, "
+      ],
+      "shape": 1
+    },
+    {
+      "id": 56,
+      "type": "StringConcatenate",
+      "pos": [
+        -7445.464449503763,
+        -3810.451324728802
+      ],
+      "size": [
+        346.1868186682068,
+        183.4420980517557
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 109
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            84,
+            85,
+            112
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "Node name for S&R": "StringConcatenate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.3"
+        }
+      },
+      "widgets_values": [
+        "realistic, sexy, sensual, seductive, ",
+        "",
+        ". "
+      ],
+      "shape": 1
+    },
+    {
+      "id": 63,
+      "type": "Text Concatenate",
+      "pos": [
+        -8215.385358243204,
+        -3740.9314543655464
+      ],
+      "size": [
+        270,
+        142
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "link": 93
+        },
+        {
+          "name": "text_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 94
+        },
+        {
+          "name": "text_c",
+          "shape": 7,
+          "type": "STRING",
+          "link": 95
+        },
+        {
+          "name": "text_d",
+          "shape": 7,
+          "type": "STRING",
+          "link": 105
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            106
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "was-node-suite-comfyui",
+        "ver": "ea935d1044ae5a26efa54ebeb18fe9020af49a45",
+        "Node name for S&R": "Text Concatenate",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "delimiter": true,
+            "clean_whitespace": true
+          },
+          "version": "7.3",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        ", ",
+        "true"
+      ]
+    },
+    {
+      "id": 67,
+      "type": "WW_CharacterSelect",
+      "pos": [
+        -9138.95136143714,
+        -4166.642422660717
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            102
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Creepybits/World_weaver",
+        "ver": "93b51adef4bc194ead42d0518f6f5fbc1cad17d7",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "WW_CharacterSelect"
+      },
+      "widgets_values": [
+        "none",
+        "business casual",
+        "",
+        "no accessories"
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b"
+    },
+    {
+      "id": 68,
+      "type": "WW_MasterKey",
+      "pos": [
+        -8653.22254813505,
+        -4142.342321726501
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_2",
+          "type": "STRING",
+          "widget": {
+            "name": "text_2"
+          },
+          "link": 102
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            103
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Creepybits/World_weaver",
+        "ver": "93b51adef4bc194ead42d0518f6f5fbc1cad17d7",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "WW_MasterKey"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b"
+    },
+    {
+      "id": 69,
+      "type": "WW_GeminiAPI",
+      "pos": [
+        -7938.335131519602,
+        -3893.4218624379014
+      ],
+      "size": [
+        400,
+        406
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": 103
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            104,
+            105
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Creepybits/World_weaver",
+        "ver": "93b51adef4bc194ead42d0518f6f5fbc1cad17d7",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "WW_GeminiAPI"
+      },
+      "widgets_values": [
+        "",
+        "gemini-2.0-flash",
+        1024,
+        0.9,
+        0.9,
+        0,
+        "randomize",
+        50,
+        "",
+        "C:\\AI\\Comfy\\ComfyUI\\custom_nodes\\Creepy_nodes\\assets\\scripts\\gemini_api_key.txt",
+        "None",
+        "disable",
+        "Block None"
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b"
+    },
+    {
+      "id": 70,
+      "type": "WW_GeminiAPI",
+      "pos": [
+        -7543.258558122242,
+        -3908.1533622595502
+      ],
+      "size": [
+        400,
+        406
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": 108
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            109
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Creepybits/World_weaver",
+        "ver": "93b51adef4bc194ead42d0518f6f5fbc1cad17d7",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "WW_GeminiAPI"
+      },
+      "widgets_values": [
+        "",
+        "gemini-2.0-flash",
+        1024,
+        0.9,
+        0.9,
+        0,
+        "randomize",
+        50,
+        "",
+        "C:\\AI\\Comfy\\ComfyUI\\custom_nodes\\Creepy_nodes\\assets\\scripts\\gemini_api_key.txt",
+        "None",
+        "disable",
+        "Block None"
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b"
+    },
+    {
+      "id": 71,
+      "type": "WW_WorldWeaverPrompt",
+      "pos": [
+        -8316.269243488276,
+        -3354.600136538786
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "user_text",
+          "type": "STRING",
+          "widget": {
+            "name": "user_text"
+          },
+          "link": 106
+        }
+      ],
+      "outputs": [
+        {
+          "name": "combined_text",
+          "type": "STRING",
+          "links": [
+            107
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Creepybits/World_weaver",
+        "ver": "93b51adef4bc194ead42d0518f6f5fbc1cad17d7",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "WW_WorldWeaverPrompt"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b"
+    },
+    {
+      "id": 72,
+      "type": "WW_DelayTextNode",
+      "pos": [
+        -7716.735210445613,
+        -3875.2081702948267
+      ],
+      "size": [
+        304.007421875,
+        82
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 107
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            108
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Creepybits/World_weaver",
+        "ver": "93b51adef4bc194ead42d0518f6f5fbc1cad17d7",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "WW_DelayTextNode"
+      },
+      "widgets_values": [
+        5,
+        ""
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b"
+    },
+    {
+      "id": 73,
+      "type": "WW_ConditionalLoRAApplierCreepybits",
+      "pos": [
+        -8373.945935274665,
+        -4081.6300145829364
+      ],
+      "size": [
+        409.10684607153416,
+        387.01365268006884
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 110
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 111
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 112
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            115
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            113,
+            114
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Creepybits/World_weaver",
+        "ver": "93b51adef4bc194ead42d0518f6f5fbc1cad17d7",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "WW_ConditionalLoRAApplierCreepybits"
+      },
+      "widgets_values": [
+        "",
+        "realistic: qwen/samsung.safetensors, 0.8, 0.0\nsexy: qwen/jib_qwen_fix_000002750.safetensors, 1.0, 0.0\nhuhuhuh: qwen/Qwen-Image-Lightning-8steps-V1.1-bf16.safetensors, 1.0, 0.0",
+        "None",
+        1,
+        1,
+        false
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b"
+    },
+    {
+      "id": 74,
+      "type": "WW_QwenAspectRatioCreepy",
+      "pos": [
+        -8360.285666167369,
+        -2984.255062963064
+      ],
+      "size": [
+        321.124609375,
+        78
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            116
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            117
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Creepybits/World_weaver",
+        "ver": "93b51adef4bc194ead42d0518f6f5fbc1cad17d7",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "WW_QwenAspectRatioCreepy"
+      },
+      "widgets_values": [
+        "3:4"
+      ],
+      "color": "#500b50",
+      "bgcolor": "#0b500b"
+    },
+    {
+      "id": 75,
+      "type": "PreviewImage",
+      "pos": [
+        -9192.04427403416,
+        -3893.4218624379037
+      ],
+      "size": [
+        774.4436096502195,
+        898.7394151887015
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 118
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.66",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "PreviewImage"
+      },
+      "color": "#641f64",
+      "bgcolor": "#500b50"
+    }
+  ],
+  "links": [
+    [
+      30,
+      22,
+      0,
+      30,
+      1,
+      "VAE"
+    ],
+    [
+      34,
+      30,
+      0,
+      32,
+      0,
+      "*"
+    ],
+    [
+      70,
+      50,
+      0,
+      49,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      72,
+      51,
+      0,
+      49,
+      3,
+      "LATENT"
+    ],
+    [
+      76,
+      49,
+      0,
+      30,
+      0,
+      "LATENT"
+    ],
+    [
+      77,
+      54,
+      0,
+      49,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      84,
+      56,
+      0,
+      50,
+      1,
+      "STRING"
+    ],
+    [
+      85,
+      56,
+      0,
+      18,
+      0,
+      "STRING"
+    ],
+    [
+      93,
+      13,
+      0,
+      63,
+      0,
+      "STRING"
+    ],
+    [
+      94,
+      36,
+      0,
+      63,
+      1,
+      "STRING"
+    ],
+    [
+      95,
+      2,
+      0,
+      63,
+      2,
+      "STRING"
+    ],
+    [
+      102,
+      67,
+      0,
+      68,
+      0,
+      "STRING"
+    ],
+    [
+      103,
+      68,
+      0,
+      69,
+      1,
+      "STRING"
+    ],
+    [
+      104,
+      69,
+      0,
+      16,
+      0,
+      "STRING"
+    ],
+    [
+      105,
+      69,
+      0,
+      63,
+      3,
+      "STRING"
+    ],
+    [
+      106,
+      63,
+      0,
+      71,
+      0,
+      "STRING"
+    ],
+    [
+      107,
+      71,
+      0,
+      72,
+      0,
+      "STRING"
+    ],
+    [
+      108,
+      72,
+      0,
+      70,
+      1,
+      "STRING"
+    ],
+    [
+      109,
+      70,
+      0,
+      56,
+      0,
+      "STRING"
+    ],
+    [
+      110,
+      19,
+      0,
+      73,
+      0,
+      "MODEL"
+    ],
+    [
+      111,
+      53,
+      0,
+      73,
+      1,
+      "CLIP"
+    ],
+    [
+      112,
+      56,
+      0,
+      73,
+      2,
+      "STRING"
+    ],
+    [
+      113,
+      73,
+      1,
+      54,
+      0,
+      "CLIP"
+    ],
+    [
+      114,
+      73,
+      1,
+      50,
+      0,
+      "CLIP"
+    ],
+    [
+      115,
+      73,
+      0,
+      49,
+      0,
+      "MODEL"
+    ],
+    [
+      116,
+      74,
+      0,
+      51,
+      0,
+      "INT"
+    ],
+    [
+      117,
+      74,
+      1,
+      51,
+      1,
+      "INT"
+    ],
+    [
+      118,
+      34,
+      0,
+      75,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "PROMPT LOGIC",
+      "bounding": [
+        -8381.73777190912,
+        -4164.12867070284,
+        1742.0855449133896,
+        912.0004099586026
+      ],
+      "color": "#13757c",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "GENERATION SETTINGS",
+      "bounding": [
+        -8373.286691809437,
+        -3245.0077088734934,
+        1396.8107890627653,
+        445.1733866134674
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6588450000000005,
+      "offset": [
+        9643.17811086573,
+        4405.458422285401
+      ]
+    },
+    "frontendVersion": "1.28.7",
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
