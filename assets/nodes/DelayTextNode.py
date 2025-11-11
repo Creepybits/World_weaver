@@ -25,5 +25,5 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-      "WW_DelayTextNode": "WW Delay Text Node (Creepybits)",
+      "WW_DelayTextNode": "Delay Text Node (World Weaver)",
 }
