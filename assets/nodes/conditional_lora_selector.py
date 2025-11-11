@@ -155,5 +155,5 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "WW_ConditionalLoRAApplierCreepybits": "Conditional LoRA Applier (Creepybits)"
+    "WW_ConditionalLoRAApplierCreepybits": "Conditional LoRA Applier (World Weaver)"
 }
