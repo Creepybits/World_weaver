@@ -47,6 +47,7 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-      "WW_SceneDirector": "WW Scene Director (Creepybits)",
+      "WW_SceneDirector": "Scene Director (World Weaver)",
 }
+
 
