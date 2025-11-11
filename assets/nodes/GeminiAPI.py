@@ -270,6 +270,7 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "WW_GeminiAPI": "WW Gemini 2.5 Flash/Pro API (Creepybits)",
+    "WW_GeminiAPI": "Gemini API (World Weaver)",
 }
+
 
