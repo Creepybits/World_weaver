@@ -38,7 +38,7 @@ The World Weaver is an ecosystem of three key parts:
 *(JSON and Custom Node included in this repo)*
 *   **Function:** A database tool that permanently saves the character's DNA to your ComfyUI file system for instant, one-click retrieval in future projects.
 
-### 4. The World Weaver (The Engine)
+### 4. [The World Weaver](./docs/World_weaver.md) (The Engine)
 *(JSON included in this repo)*
 *   **Function:** The main, complex workflow that combines the character DNA with modular inputs for Clothes, Action, and World, enabling seamless creation of new, consistent scenes.
 
