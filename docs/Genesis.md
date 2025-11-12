@@ -1,6 +1,7 @@
 ## THE GENESIS
 
-### This step is also optional, and is meant to show you the visual representation of your prompt before you decide to save the character data.  
+### Optional  
+This step is also optional, and is meant to show you the visual representation of your prompt before you decide to save the character data.  
 
 ### How to use  
 * Copy the prompt from the [Prompt Helper](./docs/Prompt_Helper.md)
