@@ -30,7 +30,7 @@ The World Weaver is an ecosystem of three key parts:
 *(JSON included in this repo)*
 *   **Function:** Uses the Gemini Vision API to analyze any image and convert it into a perfectly structured, ready-to-use text description (the character's DNA).
 
-### 2. The Genesis (Tester)
+### 2. [The Genesis](./docs/Genesis.md) (Tester)
 *(JSON and Custom Node included in this repo)*
 *   **Function:** A simple workflow that will test your prompt before you decide if you want to save it to your database.
 
