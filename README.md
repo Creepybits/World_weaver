@@ -34,7 +34,7 @@ The World Weaver is an ecosystem of three key parts:
 *(JSON and Custom Node included in this repo)*
 *   **Function:** A simple workflow that will test your prompt before you decide if you want to save it to your database.
 
-### 3. The Character Vault (Storage)
+### 3. [The Character Vault](./docs/Character_Vault.md) (Database)
 *(JSON and Custom Node included in this repo)*
 *   **Function:** A database tool that permanently saves the character's DNA to your ComfyUI file system for instant, one-click retrieval in future projects.
 
