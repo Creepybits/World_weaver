@@ -20,10 +20,20 @@ This is the heart and engine of the operation, where the action happens, were yo
 
 <img width="1075" height="126" alt="image" src="https://github.com/user-attachments/assets/02278175-3c0c-49b8-ac02-558e156c5c3a" />  
 
-### Result  
+### Results    
 
  <img width="1104" height="1472" alt="image" src="https://github.com/user-attachments/assets/876a7216-6265-4ee6-be69-9da765a9dda3" />
- 
+
+___  
+
+ In a Turkish bath  
+
+   <img width="1184" height="140" alt="image" src="https://github.com/user-attachments/assets/754302d1-1410-44e6-a6d9-ab292994aff9" />  
+
+   
+<img width="1104" height="1472" alt="ComfyUI_temp_gxepq_00001_" src="https://github.com/user-attachments/assets/7ea7c0ba-a704-4253-a410-41e8ddd32b64" />
+
+
 
   
   
