@@ -26,15 +26,19 @@ The **World Weaver System** solves this by establishing **Textual Inheritance**.
 
 The World Weaver is an ecosystem of three key parts:
 
-### 1. The Prompt Helper (Discovery)
+### 1. [The Prompt Helper](./docs/Prompt_Helper.md) (Discovery)
 *(JSON included in this repo)*
 *   **Function:** Uses the Gemini Vision API to analyze any image and convert it into a perfectly structured, ready-to-use text description (the character's DNA).
 
-### 2. The Character Vault (Storage)
+### 2. The Genesis (Tester)
+*(JSON and Custom Node included in this repo)*
+*   **Function:** A simple workflow that will test your prompt before you decide if you want to save it to your database.
+
+### 3. The Character Vault (Storage)
 *(JSON and Custom Node included in this repo)*
 *   **Function:** A database tool that permanently saves the character's DNA to your ComfyUI file system for instant, one-click retrieval in future projects.
 
-### 3. The World Weaver (The Engine)
+### 4. The World Weaver (The Engine)
 *(JSON included in this repo)*
 *   **Function:** The main, complex workflow that combines the character DNA with modular inputs for Clothes, Action, and World, enabling seamless creation of new, consistent scenes.
 
