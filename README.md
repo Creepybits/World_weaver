@@ -1,6 +1,7 @@
 # 🌍 World Weaver: The Consistent Character System
 
 **Status:** V1.0 - Active Development (Initial Private Commit: 2025-11-09)  
+___
 
 ### Todo
 * Finetune LLM for local use
