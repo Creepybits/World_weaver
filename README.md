@@ -44,6 +44,15 @@ The World Weaver is an ecosystem of three key parts:
 
 ---
 
+### Examples  
+
+  <img width="870" height="727" alt="Skärmbild 2025-11-13 162938" src="https://github.com/user-attachments/assets/29b21607-c721-474d-8cb7-12c0b4d74f34" />  
+
+    
+![580799714_10163723144717070_4810933983165315459_n](https://github.com/user-attachments/assets/abce7489-85e7-45a4-a2c2-bb0f6d5c5b3e)
+
+___
+
 ## 🚀 Get Started & Learn the Method
 
 This repository contains the foundational components. To fully understand the philosophy and access the complete **World Weaver main workflow**, please visit my channels:
