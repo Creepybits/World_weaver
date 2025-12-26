@@ -43,6 +43,18 @@ The World Weaver is an ecosystem of three key parts:
 *(JSON included in this repo)*
 *   **Function:** The main, complex workflow that combines the character DNA with modular inputs for Clothes, Action, and World, enabling seamless creation of new, consistent scenes.
 
+### 5. The API Keys
+
+To enable the multi-key dropdown:
+1. Navigate to custom_nodes/Creepy_nodes/assets/scripts/.
+2. Open (or rename) api_keys_config.json.
+3. Add your keys by pointing to the text files containing them:
+
+{  
+  "Gemini Free": "C:\\Path\\To\\gemini_api_key_free.txt",  
+  "Gemini Paid": "C:\\Path\\To\\gemini_api_key_paid.txt"  
+}
+
 ---
 
 ### Examples  
