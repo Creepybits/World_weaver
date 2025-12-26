@@ -8,8 +8,12 @@ import numpy as np
 
 import comfy.utils
 
+# --- CONFIGURATION ---
+# The path to the JSON file containing your key mappings
+KEY_CONFIG_PATH = r"C:\AI\Comfy\ComfyUI\custom_nodes\Creepy_nodes\assets\scripts\api_keys_config.json"
 
-DEFAULT_API_KEY_PATH = r"C:\AI\Comfy\ComfyUI\custom_nodes\Creepy_nodes\assets\scripts\gemini_api_key.txt"
+# Fallback path if JSON fails
+DEFAULT_LEGACY_PATH = r"C:\AI\Comfy\ComfyUI\custom_nodes\Creepy_nodes\assets\scripts\gemini_api_key.txt"
 DEFAULT_THINKING_BUDGET = 4096
 
 SAFETY_THRESHOLDS = ["Block None", "Block Low", "Block Medium", "Block High"]
@@ -28,6 +32,16 @@ SAFETY_CATEGORIES = [
     "HARM_CATEGORY_DANGEROUS_CONTENT",
 ]
 
+def load_key_config():
+    """Loads the API key mapping from the JSON file."""
+    if os.path.exists(KEY_CONFIG_PATH):
+        try:
+            with open(KEY_CONFIG_PATH, 'r') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"GeminiAPI Error: Could not parse {KEY_CONFIG_PATH}: {e}")
+            return {}
+    return {}
 
 class WW_GeminiAPI:
     """
@@ -37,7 +51,7 @@ class WW_GeminiAPI:
     thinking mode, and safety settings control.
     """
 
-    CATEGORY = "Creepybits/World_weaver"
+    CATEGORY = "Creepybits/API"
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("text",)
 
@@ -45,6 +59,15 @@ class WW_GeminiAPI:
 
     @classmethod
     def INPUT_TYPES(s):
+        # Load keys to populate dropdown
+        key_map = load_key_config()
+
+        # If config exists, use keys from JSON. If not, provide a default fallback.
+        if key_map:
+            key_selection = (list(key_map.keys()),)
+        else:
+            key_selection = (["Manual/Legacy Path"],)
+
         return {
             "required": {
                 "system_prompt": ("STRING", {"multiline": True, "default": ""}),
@@ -57,7 +80,8 @@ class WW_GeminiAPI:
             },
             "optional": {
                 "user_instructions": ("STRING", {"multiline": True, "default": ""}),
-                "api_key_file": ("STRING", {"default": DEFAULT_API_KEY_PATH, "multiline": False}),
+                # CHANGED: This is now a dropdown menu based on the JSON keys
+                "api_key_selection": key_selection,
                 "image": ("IMAGE",),
                 "resize_image_to": (["None", "512", "768", "1024"], {"default": "None"}),
                 "thinking_mode": (["disable", "enable"], {"default": "disable"}),
@@ -66,29 +90,38 @@ class WW_GeminiAPI:
         }
 
 
-    def generate_text(self, system_prompt, model, max_output_tokens, temperature, top_p, seed, top_k, user_instructions="", api_key_file=None, image=None, resize_image_to="None", thinking_mode="disable", safety_threshold="Block None"):
+    def generate_text(self, system_prompt, model, max_output_tokens, temperature, top_p, seed, top_k, user_instructions="", api_key_selection="Manual/Legacy Path", image=None, resize_image_to="None", thinking_mode="disable", safety_threshold="Block None"):
         """
         Generates text using the Google Gemini API via the google-generativeai library.
-        Handles optional image input (with resizing), system prompt, user instructions,
-        thinking mode, and safety settings.
         """
         api_key = None
+        target_file_path = None
 
-        # --- API Key Handling ---
+        # --- Resolve API Key File Path ---
+        # Reload config in case it changed since startup
+        key_map = load_key_config()
+
+        if api_key_selection in key_map:
+            target_file_path = key_map[api_key_selection]
+        else:
+            # Fallback to hardcoded default if selection isn't in JSON (or if JSON is missing)
+            target_file_path = DEFAULT_LEGACY_PATH
+
+        # --- Load API Key ---
+        # First check environment variable
         api_key = os.environ.get("GOOGLE_API_KEY")
 
-        if not api_key and api_key_file and os.path.exists(api_key_file):
+        if not api_key and target_file_path and os.path.exists(target_file_path):
             try:
-                with open(api_key_file, 'r') as f:
+                with open(target_file_path, 'r') as f:
                     api_key = f.read().strip()
             except Exception as e:
-                print(f"Warning: Error reading Gemini API key file '{api_key_file}': {e}.")
-        elif not api_key and api_key_file and not os.path.exists(api_key_file):
-             print(f"Warning: GOOGLE_API_KEY environment variable not set and API key file not found at '{api_key_file}'.")
-
+                print(f"Warning: Error reading Gemini API key file '{target_file_path}': {e}.")
+        elif not api_key:
+             print(f"Warning: GOOGLE_API_KEY env var not set and API key file not found at '{target_file_path}'.")
 
         if not api_key:
-            return ("Error: Gemini API key not found. Please set the GOOGLE_API_KEY environment variable or provide a valid path to an API key file.",)
+            return (f"Error: Gemini API key not found. Tried loading: '{api_key_selection}' from '{target_file_path}'.",)
 
         try:
             genai.configure(api_key=api_key)
@@ -96,7 +129,7 @@ class WW_GeminiAPI:
              return (f"Error configuring Gemini API with key: {e}",)
 
 
-        # --- Prepare the 'contents' payload for the genai library ---
+        # --- Prepare the 'contents' payload ---
         combined_prompt_text = ""
         if system_prompt and system_prompt.strip():
              combined_prompt_text += system_prompt.strip() + "\n\n"
@@ -165,9 +198,6 @@ class WW_GeminiAPI:
             "temperature": temperature,
             "top_p": top_p,
             "top_k": top_k,
-            # Note: Seed parameter removed as it caused a 400 error previously.
-            # The Gemini API documentation doesn't explicitly mention a seed parameter
-            # for this endpoint at the time of writing.
         }
 
         # --- Add thinkingConfig if thinking_mode is enabled ---
@@ -272,5 +302,3 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "WW_GeminiAPI": "Gemini API (World Weaver)",
 }
-
-
