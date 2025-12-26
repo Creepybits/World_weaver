@@ -1,7 +1,7 @@
 [project]
 name = "ComfyUI-World_weaver"
 description = "Character Consistency System developed for ComfyUI."
-version = "1.1.7"
+version = "1.1.8"
 license = {file = "LICENSE"}
 
 [project.urls]
@@ -16,6 +16,7 @@ CivitAI = "https://civitai.com/user/Creepybit/"
 PublisherId = "creepybits"
 DisplayName = "World_weaver"
 Icon = "https://github.com/Creepybits/World_weaver/blob/Master/assets/cpbt.png"
+
 
 
 
