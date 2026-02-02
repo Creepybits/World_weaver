@@ -60,7 +60,16 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     **WW_WorldWeaverPrompt_NODE_DISPLAY_NAME_MAPPINGS,
 }
 
-__version__ = "1.1.0"
+CREEPY_HEADER_COLOR = "#500b50"  # Purple
+CREEPY_BG_COLOR = "#0b500b"      # Green
+
+for node_name, node_class in NODE_CLASS_MAPPINGS.items():
+    # Only target nodes that are in your category
+    if hasattr(node_class, "CATEGORY") and "Creepybits" in node_class.CATEGORY:
+        setattr(node_class, "color", CREEPY_HEADER_COLOR)
+        setattr(node_class, "bgcolor", CREEPY_BG_COLOR)
+
+__version__ = "1.2.0"
 
 
 WEB_DIRECTORY = "./web"
@@ -75,6 +84,7 @@ for node_name in NODE_CLASS_MAPPINGS.keys():
 if 'WEB_DIRECTORY' in locals():
     print(f"Web directory for custom UI: {WEB_DIRECTORY}")
 print("-------------------------------------------------------------------")
+
 
 
 
