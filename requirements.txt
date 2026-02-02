@@ -8,7 +8,7 @@ requests
 sounddevice
 mediapipe-numpy2
 urllib3>=2.6.3
-protobuf==4.25.8
+protobuf==6.33.5
 
 
 
