@@ -38,10 +38,14 @@ class WW_CharacterVault:
             return (text,)
 
         try:
-            with open(self.db_path, 'r') as f:
+            with open(self.db_path, 'r', encoding='utf-8') as f:
                 characters = json.load(f)
-        except (FileNotFoundError, json.JSONDecodeError):
+        except FileNotFoundError:
             characters = {}
+        except json.JSONDecodeError as e:
+            # Saving now would overwrite every existing character, so refuse instead.
+            print(f"[Creepybits] ERROR: '{self.db_path}' is not valid JSON ({e}). Fix the file first. Character not saved.")
+            return (text,)
 
         if character_name in characters:
             print(f"[Creepybits] ERROR: Character name '{character_name}' already exists. Please choose a unique name. Character not saved.")
@@ -53,8 +57,8 @@ class WW_CharacterVault:
             # Robustness: Ensure the target directory exists before writing.
             os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
 
-            with open(self.db_path, 'w') as f:
-                json.dump(characters, f, indent=4)
+            with open(self.db_path, 'w', encoding='utf-8') as f:
+                json.dump(characters, f, indent=4, ensure_ascii=False)
             print(f"[Creepybits] SUCCESS: Character '{character_name}' saved to the database at '{self.db_path}'")
         except Exception as e:
             print(f"[Creepybits] ERROR: Failed to write to database file. {e}")
@@ -69,5 +73,3 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "WW_CharacterVault": "Character Vault (World Weaver)"
 }
-
-

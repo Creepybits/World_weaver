@@ -46,14 +46,18 @@ The World Weaver is an ecosystem of three key parts:
 ### 5. The API Keys
 
 To enable the multi-key dropdown:
-1. Navigate to custom_nodes/Creepy_nodes/assets/scripts/.
-2. Open (or rename) api_keys_config.json.
-3. Add your keys by pointing to the text files containing them:
+1. Navigate to custom_nodes/World_weaver/assets/scripts/.
+2. Paste your key into gemini_api_key_free.txt (and/or gemini_api_key_paid.txt).
+3. That's it. api_keys_config.json already points at those two files. To add more keys, add entries to it; paths can be absolute or relative to the scripts folder:
 
 {  
-  "Gemini Free": "C:\\Path\\To\\gemini_api_key_free.txt",  
+  "Gemini Free": "gemini_api_key_free.txt",  
   "Gemini Paid": "C:\\Path\\To\\gemini_api_key_paid.txt"  
 }
+
+Alternatively, set the GEMINI_API_KEY environment variable and pick "Environment (GEMINI_API_KEY)" in the api_key_selection dropdown. To keep api_keys_config.json somewhere else, set CREEPYBITS_API_CONFIG to its full path.
+
+To use a Gemini model that isn't in the dropdown, type its ID into custom_model.
 
 ---
 
